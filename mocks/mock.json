@@ -1,0 +1,271 @@
+{
+  "uuid": "bcd1d629-558a-48bb-9a1a-fee6a747be01",
+  "lastMigration": 33,
+  "name": "Alma Test Server",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "bf2972b0-652e-455a-a356-523e36c9e73f",
+      "type": "http",
+      "documentation": "Returns a list of payments and the total amount left to pay for the customer (amounts are in cents)",
+      "method": "get",
+      "endpoint": "payments",
+      "responses": [
+        {
+          "uuid": "5467b855-ba2b-4a94-b9fc-d5b912ee66d5",
+          "body": "{\n            \"total_amount_left_to_pay\": 40750,\n            \"payments\": [\n              {\n                \"id\": \"payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy2\",\n                \"created\": 1751527297,\n                \"state\": \"in_progress\",\n                \"merchant_display_name\": \"France_merchant\",\n                \"purchase_amount\": 21000,\n                \"payment_plan\": [\n                  {\n                    \"id\": \"installment_121IopV7jNAHBV9kfHX66XiKbH88Z7K6Vh\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1751527297,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1751527335,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 378,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": null,\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV5UspdWks53KZ1P5zTRRKG51sP9m\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1754205697,\n                    \"original_due_date\": null,\n                    \"date_paid\": null,\n                    \"state\": \"pending\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-09-03\",\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV6yEGwrRoMhkooKdJZONFD36bgPX\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1756884097,\n                    \"original_due_date\": null,\n                    \"date_paid\": null,\n                    \"state\": \"pending\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-10-03\",\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV5S0nF0Gc4IqzCSxfy1xBsG6B1tL\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1759476097,\n                    \"original_due_date\": null,\n                    \"date_paid\": null,\n                    \"state\": \"pending\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-11-03\",\n                    \"customer_cannot_postpone_reason\": null\n                  }\n                ],\n                \"recovery\": null,\n                \"deferred_trigger\": false,\n                \"deferred_trigger_applied\": null,\n                \"deferred_trigger_description\": null,\n                \"is_deferred_capture\": false,\n                \"logo_url\": \"https://cdn-icons-png.freepik.com/512/8312/8312956.png\",\n                \"refunds\": []\n              },\n              {\n                \"id\": \"payment_121FwSk1IpNiGOXBhhbz17OUoERYj1Uwsz\",\n                \"created\": 1750841654,\n                \"state\": \"late\",\n                \"merchant_display_name\": \"France_merchant\",\n                \"purchase_amount\": 50000,\n                \"payment_plan\": [\n                  {\n                    \"id\": \"installment_121FwSn1rq3nQo1VFFnlaapwiSjbt2qBmV\",\n                    \"purchase_amount\": 12500,\n                    \"due_date\": 1750841657,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1750841694,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 900,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": null,\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121FwSn2IOGFIaQ6sQjjjkfkFpO6D5GsLD\",\n                    \"purchase_amount\": 12500,\n                    \"due_date\": 1753433657,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1751287110,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": null,\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121FwSn2ZIOco7uZ8124buNt3OE8h3lslW\",\n                    \"purchase_amount\": 12500,\n                    \"due_date\": 1756112057,\n                    \"original_due_date\": null,\n                    \"date_paid\": null,\n                    \"state\": \"late\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-09-25\",\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121FwSn4T1Ua42v2fLsUPwwJE08kc1dYnk\",\n                    \"purchase_amount\": 12500,\n                    \"due_date\": 1758790457,\n                    \"original_due_date\": null,\n                    \"date_paid\": null,\n                    \"state\": \"late\",\n                    \"customer_fee\": 0,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-10-26\",\n                    \"customer_cannot_postpone_reason\": null\n                  }\n                ],\n                \"recovery\": null,\n                \"deferred_trigger\": false,\n                \"deferred_trigger_applied\": null,\n                \"deferred_trigger_description\": null,\n                \"is_deferred_capture\": false,\n                \"logo_url\": null,\n                \"refunds\": []\n              },\n              {\n                \"id\": \"payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy3\",\n                \"created\": 1751527297,\n                \"state\": \"completed\",\n                \"merchant_display_name\": \"France_merchant\",\n                \"purchase_amount\": 21000,\n                \"payment_plan\": [\n                  {\n                    \"id\": \"installment_121IopV7jNAHBV9kfHX66XiKbH88Z7K6Vh\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1751527297,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1751527335,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 378,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": null,\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV5UspdWks53KZ1P5zTRRKG51sP9m\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1754205697,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1754205697,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 378,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": null,\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV6yEGwrRoMhkooKdJZONFD36bgPX\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1756884097,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1756884097,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 378,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-10-03\",\n                    \"customer_cannot_postpone_reason\": null\n                  },\n                  {\n                    \"id\": \"installment_121IopV5S0nF0Gc4IqzCSxfy1xBsG6B1tL\",\n                    \"purchase_amount\": 5250,\n                    \"due_date\": 1759476097,\n                    \"original_due_date\": null,\n                    \"date_paid\": 1759476097,\n                    \"state\": \"paid\",\n                    \"customer_fee\": 378,\n                    \"customer_interest\": 0,\n                    \"customer_can_postpone_until\": \"2025-11-03\",\n                    \"customer_cannot_postpone_reason\": null\n                  }\n                ],\n                \"recovery\": null,\n                \"deferred_trigger\": false,\n                \"deferred_trigger_applied\": null,\n                \"deferred_trigger_description\": null,\n                \"is_deferred_capture\": false,\n                \"logo_url\": null,\n                \"refunds\": []\n              }\n            ]\n          }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2fd3d14d-f3de-49ab-93f0-2b91053c1464",
+      "type": "http",
+      "documentation": "amounts are in cents",
+      "method": "get",
+      "endpoint": "payment/payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy2",
+      "responses": [
+        {
+          "uuid": "05588335-1421-4945-abd7-4fd12471c487",
+          "body": "{\n  \"id\": \"payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy2\",\n  \"created\": 1751527297,\n  \"state\": \"in_progress\",\n  \"origin\": \"online_in_page\",\n  \"integration_origin\": null,\n  \"locale\": \"fr\",\n  \"country_of_service\": \"FR\",\n  \"payment_plan\": [\n    {\n      \"id\": \"installment_121IopV7jNAHBV9kfHX66XiKbH88Z7K6Vh\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1751527297,\n      \"original_due_date\": null,\n      \"date_paid\": 1751527335,\n      \"state\": \"paid\",\n      \"customer_fee\": 378,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": \"card\"\n    },\n    {\n      \"id\": \"installment_121IopV5UspdWks53KZ1P5zTRRKG51sP9m\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1754205697,\n      \"original_due_date\": null,\n      \"date_paid\": null,\n      \"state\": \"pending\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": \"2025-09-03\",\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    },\n    {\n      \"id\": \"installment_121IopV6yEGwrRoMhkooKdJZONFD36bgPX\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1756884097,\n      \"original_due_date\": null,\n      \"date_paid\": null,\n      \"state\": \"pending\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": \"2025-10-03\",\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    },\n    {\n      \"id\": \"installment_121IopV5S0nF0Gc4IqzCSxfy1xBsG6B1tL\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1759476097,\n      \"original_due_date\": null,\n      \"date_paid\": null,\n      \"state\": \"pending\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": \"2025-11-03\",\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    }\n  ],\n  \"purchase_amount\": 21000,\n  \"fees\": {\n    \"customer\": {\n      \"total\": 378,\n      \"total_excluding_tax\": 378,\n      \"tax\": 0\n    }\n  },\n  \"customer_interest\": 0,\n  \"amount_left_to_pay\": 15750,\n  \"annual_interest_rate\": null,\n  \"deferred_days\": 0,\n  \"deferred_months\": 0,\n  \"deferred_trigger\": false,\n  \"deferred_trigger_applied\": null,\n  \"deferred_trigger_description\": null,\n  \"is_deferred_capture\": false,\n  \"merchant_id\": \"merchant_realmerchantfr\",\n  \"merchant_brand\": \"France_merchant\",\n  \"merchant_display_name\": \"France_merchant\",\n  \"merchant_name\": \"France_merchant\",\n  \"merchant_website\": null,\n  \"merchant_email\": [],\n  \"merchant_phone\": null,\n  \"customer\": {\n    \"id\": \"customer_121IopV5M3aBLL11vPQA9f3BYQcf752lpV\",\n    \"card\": {\n      \"id\": \"card_121Ioq053jQm3v6opBYKYNx4aOK0f37b5d\",\n      \"brand\": \"visa\",\n      \"iin\": \"400000\",\n      \"country\": \"FR\",\n      \"created\": 1751527328,\n      \"exp_month\": 1,\n      \"exp_year\": 2030,\n      \"last4\": \"0003\",\n      \"verified\": true,\n      \"psp\": \"stripe\",\n      \"psp_representations\": {\n        \"stripe_sca\": {\n          \"customer_id\": \"cus_SbvJ4IgQIhUuI5\",\n          \"payment_method_id\": \"pm_1RghT9J7ery6I1BqPtyWmFl1\"\n        }\n      }\n    },\n    \"cards\": [\n      {\n        \"id\": \"card_121Ioq053jQm3v6opBYKYNx4aOK0f37b5d\",\n        \"brand\": \"visa\",\n        \"iin\": \"400000\",\n        \"country\": \"FR\",\n        \"created\": 1751527328,\n        \"exp_month\": 1,\n        \"exp_year\": 2030,\n        \"last4\": \"0003\",\n        \"verified\": true,\n        \"psp\": \"stripe\",\n        \"psp_representations\": {\n          \"stripe_sca\": {\n            \"customer_id\": \"cus_SbvJ4IgQIhUuI5\",\n            \"payment_method_id\": \"pm_1RghT9J7ery6I1BqPtyWmFl1\"\n          }\n        }\n      }\n    ],\n    \"payment_methods\": []\n  },\n  \"recovery\": null,\n  \"refunds\": [],\n  \"requirements\": [],\n  \"preferred_payment_method\": \"card\",\n  \"payment_method_providers\": {\n    \"card\": \"stripe\"\n  },\n  \"orders\": [\n    {\n      \"id\": \"order_121IopV40o7xIU18yK2lcr08cam8g1A547\",\n      \"created\": 1751527297,\n      \"merchant_reference\": \"ref-5007085773759018\"\n    }\n  ],\n  \"return_url\": \"http://localhost:4000/after_payment.html?pid=payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy2\",\n  \"logo_url\": \"https://cdn-icons-png.freepik.com/512/8312/8312956.png\",\n  \"checkout_ab_tests\": []\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2fd3d14d-f3de-49ab-93f0-2b91053c1465",
+      "type": "http",
+      "documentation": "amounts are in cents",
+      "method": "get",
+      "endpoint": "payment/payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy3",
+      "responses": [
+        {
+          "uuid": "05588335-1421-4945-abd7-4fd12471c488",
+          "body": "{\n  \"id\": \"payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy3\",\n  \"created\": 1751527297,\n  \"state\": \"completed\",\n  \"origin\": \"online_in_page\",\n  \"integration_origin\": null,\n  \"locale\": \"fr\",\n  \"country_of_service\": \"FR\",\n  \"payment_plan\": [\n    {\n      \"id\": \"installment_121IopV7jNAHBV9kfHX66XiKbH88Z7K6Vh\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1751527297,\n      \"original_due_date\": null,\n      \"date_paid\": 1751527335,\n      \"state\": \"paid\",\n      \"customer_fee\": 378,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": \"card\"\n    },\n    {\n      \"id\": \"installment_121IopV5UspdWks53KZ1P5zTRRKG51sP9m\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1754205697,\n      \"original_due_date\": null,\n      \"date_paid\": 1754205697,\n      \"state\": \"paid\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    },\n    {\n      \"id\": \"installment_121IopV6yEGwrRoMhkooKdJZONFD36bgPX\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1756884097,\n      \"original_due_date\": null,\n      \"date_paid\": 1756884097,\n      \"state\": \"paid\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    },\n    {\n      \"id\": \"installment_121IopV5S0nF0Gc4IqzCSxfy1xBsG6B1tL\",\n      \"purchase_amount\": 5250,\n      \"due_date\": 1759476097,\n      \"original_due_date\": null,\n      \"date_paid\": 1759476097,\n      \"state\": \"paid\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    }\n  ],\n  \"purchase_amount\": 21000,\n  \"fees\": {\n    \"customer\": {\n      \"total\": 378,\n      \"total_excluding_tax\": 378,\n      \"tax\": 0\n    }\n  },\n  \"customer_interest\": 0,\n  \"amount_left_to_pay\": 15750,\n  \"annual_interest_rate\": null,\n  \"deferred_days\": 0,\n  \"deferred_months\": 0,\n  \"deferred_trigger\": false,\n  \"deferred_trigger_applied\": null,\n  \"deferred_trigger_description\": null,\n  \"is_deferred_capture\": false,\n  \"merchant_id\": \"merchant_realmerchantfr\",\n  \"merchant_brand\": \"France_merchant\",\n  \"merchant_display_name\": \"France_merchant\",\n  \"merchant_name\": \"France_merchant\",\n  \"merchant_website\": null,\n  \"merchant_email\": [],\n  \"merchant_phone\": null,\n  \"customer\": {\n    \"id\": \"customer_121IopV5M3aBLL11vPQA9f3BYQcf752lpV\",\n    \"card\": {\n      \"id\": \"card_121Ioq053jQm3v6opBYKYNx4aOK0f37b5d\",\n      \"brand\": \"visa\",\n      \"iin\": \"400000\",\n      \"country\": \"FR\",\n      \"created\": 1751527328,\n      \"exp_month\": 1,\n      \"exp_year\": 2030,\n      \"last4\": \"0003\",\n      \"verified\": true,\n      \"psp\": \"stripe\",\n      \"psp_representations\": {\n        \"stripe_sca\": {\n          \"customer_id\": \"cus_SbvJ4IgQIhUuI5\",\n          \"payment_method_id\": \"pm_1RghT9J7ery6I1BqPtyWmFl1\"\n        }\n      }\n    },\n    \"cards\": [\n      {\n        \"id\": \"card_121Ioq053jQm3v6opBYKYNx4aOK0f37b5d\",\n        \"brand\": \"visa\",\n        \"iin\": \"400000\",\n        \"country\": \"FR\",\n        \"created\": 1751527328,\n        \"exp_month\": 1,\n        \"exp_year\": 2030,\n        \"last4\": \"0003\",\n        \"verified\": true,\n        \"psp\": \"stripe\",\n        \"psp_representations\": {\n          \"stripe_sca\": {\n            \"customer_id\": \"cus_SbvJ4IgQIhUuI5\",\n            \"payment_method_id\": \"pm_1RghT9J7ery6I1BqPtyWmFl1\"\n          }\n        }\n      }\n    ],\n    \"payment_methods\": []\n  },\n  \"recovery\": null,\n  \"refunds\": [],\n  \"requirements\": [],\n  \"preferred_payment_method\": \"card\",\n  \"payment_method_providers\": {\n    \"card\": \"stripe\"\n  },\n  \"orders\": [\n    {\n      \"id\": \"order_121IopV40o7xIU18yK2lcr08cam8g1A547\",\n      \"created\": 1751527297,\n      \"merchant_reference\": \"ref-5007085773759018\"\n    }\n  ],\n  \"return_url\": \"http://localhost:4000/after_payment.html?pid=payment_121IopV7OU4kX5pMradVJfGAQzSJz7MGy2\",\n  \"logo_url\": null,\n  \"checkout_ab_tests\": []\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "1ed1cdae-0058-4e2c-9624-2cd4ef0a7b2d",
+      "type": "http",
+      "documentation": "amounts are in cents",
+      "method": "get",
+      "endpoint": "payment/payment_121FwSk1IpNiGOXBhhbz17OUoERYj1Uwsz",
+      "responses": [
+        {
+          "uuid": "164c3941-f083-4957-bf46-6de035b3c7dd",
+          "body": "{\n  \"id\": \"payment_121FwSk1IpNiGOXBhhbz17OUoERYj1Uwsz\",\n  \"created\": 1750841654,\n  \"state\": \"late\",\n  \"origin\": \"online\",\n  \"integration_origin\": null,\n  \"locale\": \"fr\",\n  \"country_of_service\": \"FR\",\n  \"payment_plan\": [\n    {\n      \"id\": \"installment_121FwSn1rq3nQo1VFFnlaapwiSjbt2qBmV\",\n      \"purchase_amount\": 12500,\n      \"due_date\": 1750841657,\n      \"original_due_date\": null,\n      \"date_paid\": 1750841694,\n      \"state\": \"paid\",\n      \"customer_fee\": 900,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": \"card\"\n    },\n    {\n      \"id\": \"installment_121FwSn2IOGFIaQ6sQjjjkfkFpO6D5GsLD\",\n      \"purchase_amount\": 12500,\n      \"due_date\": 1753433657,\n      \"original_due_date\": null,\n      \"date_paid\": 1751287110,\n      \"state\": \"paid\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": null,\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": \"card\"\n    },\n    {\n      \"id\": \"installment_121FwSn2ZIOco7uZ8124buNt3OE8h3lslW\",\n      \"purchase_amount\": 12500,\n      \"due_date\": 1756112057,\n      \"original_due_date\": null,\n      \"date_paid\": null,\n      \"state\": \"late\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": \"2025-09-25\",\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    },\n    {\n      \"id\": \"installment_121FwSn4T1Ua42v2fLsUPwwJE08kc1dYnk\",\n      \"purchase_amount\": 12500,\n      \"due_date\": 1758790457,\n      \"original_due_date\": null,\n      \"date_paid\": null,\n      \"state\": \"late\",\n      \"customer_fee\": 0,\n      \"customer_interest\": 0,\n      \"customer_can_postpone_until\": \"2025-10-26\",\n      \"customer_cannot_postpone_reason\": null,\n      \"used_payment_method\": null\n    }\n  ],\n  \"purchase_amount\": 50000,\n  \"fees\": {\n    \"customer\": {\n      \"total\": 900,\n      \"total_excluding_tax\": 900,\n      \"tax\": 0\n    }\n  },\n  \"customer_interest\": 0,\n  \"amount_left_to_pay\": 25000,\n  \"annual_interest_rate\": null,\n  \"deferred_days\": 0,\n  \"deferred_months\": 0,\n  \"deferred_trigger\": false,\n  \"deferred_trigger_applied\": null,\n  \"deferred_trigger_description\": null,\n  \"is_deferred_capture\": false,\n  \"merchant_id\": \"merchant_realmerchantfr\",\n  \"merchant_brand\": \"France_merchant\",\n  \"merchant_display_name\": \"France_merchant\",\n  \"merchant_name\": \"France_merchant\",\n  \"merchant_website\": null,\n  \"merchant_email\": [],\n  \"merchant_phone\": null,\n  \"customer\": {\n    \"id\": \"customer_121FwSk142TxDCU2yKREttH9Uu4YQakAZB\",\n    \"card\": {\n      \"id\": \"card_121FwTG50o8PdyW76sk1LeJCw47NM42n7c\",\n      \"brand\": \"visa\",\n      \"iin\": \"400000\",\n      \"country\": \"FR\",\n      \"created\": 1750841686,\n      \"exp_month\": 1,\n      \"exp_year\": 2030,\n      \"last4\": \"0003\",\n      \"verified\": true,\n      \"psp\": \"stripe\",\n      \"psp_representations\": {\n        \"stripe_sca\": {\n          \"customer_id\": \"cus_SYx0zwvyQlQKPN\",\n          \"payment_method_id\": \"pm_1Rdp6PJ7ery6I1BqkutGzJPX\"\n        }\n      }\n    },\n    \"cards\": [\n      {\n        \"id\": \"card_121FwTG50o8PdyW76sk1LeJCw47NM42n7c\",\n        \"brand\": \"visa\",\n        \"iin\": \"400000\",\n        \"country\": \"FR\",\n        \"created\": 1750841686,\n        \"exp_month\": 1,\n        \"exp_year\": 2030,\n        \"last4\": \"0003\",\n        \"verified\": true,\n        \"psp\": \"stripe\",\n        \"psp_representations\": {\n          \"stripe_sca\": {\n            \"customer_id\": \"cus_SYx0zwvyQlQKPN\",\n            \"payment_method_id\": \"pm_1Rdp6PJ7ery6I1BqkutGzJPX\"\n          }\n        }\n      }\n    ],\n    \"payment_methods\": []\n  },\n  \"recovery\": null,\n  \"refunds\": [],\n  \"requirements\": [],\n  \"preferred_payment_method\": \"card\",\n  \"payment_method_providers\": {\n    \"card\": \"stripe\"\n  },\n  \"orders\": [],\n  \"return_url\": \"http://localhost:5173/after_payment?pid=payment_121FwSk1IpNiGOXBhhbz17OUoERYj1Uwsz\",\n  \"logo_url\": null,\n  \"checkout_ab_tests\": []\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "bf2972b0-652e-455a-a356-523e36c9e73f"
+    },
+    {
+      "type": "route",
+      "uuid": "2fd3d14d-f3de-49ab-93f0-2b91053c1464"
+    },
+    {
+      "type": "route",
+      "uuid": "1ed1cdae-0058-4e2c-9624-2cd4ef0a7b2d"
+    },
+    {
+      "type": "route",
+      "uuid": "2fd3d14d-f3de-49ab-93f0-2b91053c1465"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "cae6f66a-6a92-4c21-a776-d92634502e51",
+      "id": "e2gi",
+      "name": "New data",
+      "documentation": "",
+      "value": "[\n]"
+    }
+  ],
+  "callbacks": []
+}
