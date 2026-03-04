@@ -11,9 +11,6 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  define: {
-    'process.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL ?? ''),
-  },
   test: {
     globals: true,
     environment: 'jsdom',
